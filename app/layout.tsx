@@ -18,10 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="min-h-screen lg:h-screen border-2 border-red-300 relative overflow-hidden flex flex-col lg:flex-row">
-        <MobileNav />
-        <DesktopNav />
-          <main className="border-2 border-yellow-400 lg:h-full lg:flex-1">
+        <div className="min-h-full relative overflow-hidden flex flex-col  lg:flex-row px-4 py-10 pt-4 md:px-10 lg:px-0  lg:py-0 lg:h-screen bg-[#FDFDFD] max-w-screen-2xl mx-auto">
+          <MobileNav />
+          <DesktopNav />
+          <main className="overflow-auto lg:px-8 lg:py-6">
             {children}
           </main>
         </div>
