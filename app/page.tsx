@@ -36,14 +36,14 @@ export default function Home() {
       <div className="flex gap-4 flex-col lg:flex-row lg:mt-12">
         <div className="flex-1 flex flex-col gap-1">
           <label className="font-semibold" htmlFor="product1">Product name</label>
-          <input type="text" className="border-2 p-4 w-full rounded-lg bg-[#FFFFFF] " id="product1" />
+          <input type="text" className="border-2 p-4 w-full rounded-lg bg-white " id="product1" />
         </div>
 
         <div className="flex-2 flex flex-col gap-1">
           <label className="font-semibold" htmlFor="product">Product name</label>
           <input
             type="text"
-            className="border-2 p-4 w-full rounded-lg bg-[#FFFFFF] "
+            className="border-2 p-4 w-full rounded-lg bg-white "
             placeholder="Optional"
             id="product"
           />
@@ -53,7 +53,7 @@ export default function Home() {
       <h3 className="mt-8 lg:mt-12 mb-2 text-lg font-semibold ">Type</h3>
 
       <div className="flex flex-col lg:flex-row gap-4">
-        <div className={`border-2 p-4 py-5 rounded-lg cursor-pointer bg-[#FFFFFF] ${activeTab === 1 ? "border-[#5ECB75]": ''}`} onClick={()=> setActiveTab(1)}>
+        <div className={`border-2 p-4 py-5 rounded-lg cursor-pointer bg-white ${activeTab === 1 ? "border-[#5ECB75]": ''}`} onClick={()=> setActiveTab(1)}>
           <h3 className="flex gap-4 items-center mb-2 font-semibold">
             <Image src={box} height={40} width={40} alt="box"/>
             Physical
@@ -61,7 +61,7 @@ export default function Home() {
           <p className="w-4/5">Item has weight and needs shipping or customer pickup</p>
         </div>
 
-        <div className={`border-2 p-4 py-5 rounded-lg cursor-pointer bg-[#FFFFFF] ${activeTab === 2 ? "border-[#5ECB75]": ''}`} onClick={()=> setActiveTab(2)}>
+        <div className={`border-2 p-4 py-5 rounded-lg cursor-pointer bg-white ${activeTab === 2 ? "border-[#5ECB75]": ''}`} onClick={()=> setActiveTab(2)}>
           <h3 className="flex gap-4 items-center mb-2 font-semibold">
             <Image src={card} height={40} width={40} alt="card"/>
             Digital
@@ -69,7 +69,7 @@ export default function Home() {
           <p className="w-4/5">Item is delivered digitally or provided as a service</p>
         </div>
 
-        <div className={`border-2 p-4 py-5 rounded-lg cursor-pointer bg-[#FFFFFF]  ${activeTab === 3 ? "border-[#5ECB75]": ''}`} onClick={()=> setActiveTab(3)}>
+        <div className={`border-2 p-4 py-5 rounded-lg cursor-pointer bg-white  ${activeTab === 3 ? "border-[#5ECB75]": ''}`} onClick={()=> setActiveTab(3)}>
           <h3 className="flex gap-4 items-center mb-2 font-semibold">
             <Image src={stack} height={40} width={40} alt="stack"/>
             Bundle
@@ -78,7 +78,7 @@ export default function Home() {
         </div>
 
 
-        <div className={`border-2 p-4 py-5 rounded-lg cursor-pointer bg-[#FFFFFF]  ${activeTab === 4 ? "border-[#5ECB75]": ''}`} onClick={()=> setActiveTab(4)}>
+        <div className={`border-2 p-4 py-5 rounded-lg cursor-pointer bg-white  ${activeTab === 4 ? "border-[#5ECB75]": ''}`} onClick={()=> setActiveTab(4)}>
           <h3 className="flex gap-4 items-center mb-2 font-semibold">
             <Image src={gift} height={40} width={40} alt="gift"/>
             Gift card
@@ -88,7 +88,7 @@ export default function Home() {
       </div>
       <h3 className="mt-8 lg:mt-12 mb-2 text-lg font-semibold ">Type</h3>
 
-      <div className="border-2 grid place-content-center py-16 lg:py-24 rounded-lg bg-[#FFFFFF]">
+      <div className="border-2 grid place-content-center py-16 lg:py-24 rounded-lg bg-white">
 
         <div className="flex flex-col items-center">
           <Image src={photocard} height={40} width={40} alt="photo card"/>
@@ -97,7 +97,7 @@ export default function Home() {
         </div>
       </div>
       
-      <h3 className="mt-8 lg:mt-12 mb-2 text-lg font-semibold bg-[#FFFFFF] ">Categories</h3>
+      <h3 className="mt-8 lg:mt-12 mb-2 text-lg font-semibold bg-white ">Categories</h3>
       <div className="border-2 p-6 w-full rounded-lg"></div>
 
     </div>

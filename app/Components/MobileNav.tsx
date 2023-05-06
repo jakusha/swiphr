@@ -60,87 +60,83 @@ const MobileNav = () => {
           <Image src={logo} width={100} height={100} alt="logo icon" />
         </div>
         <ul className="capitalize w-3/4 mx-auto flex flex-col gap-1  mt-4 ">
-          <li className="py-2">
-            <Link
-              href={"/"}
+          <li className="py-2 flex gap-2 items-center">
+            <span
               onClick={() => setActive(false)}
               className="flex gap-2 items-center"
             >
               <Image src={home} alt="home" width={30} height={30} />
               home
-            </Link>
+            </span>
           </li>
-          <li className="py-2">
-            <Link
-              href={"/orders"}
+          <li className="py-2 flex gap-2 items-center">
+            <span
               onClick={() => setActive(false)}
               className="flex gap-2 items-center"
             >
               <Image src={orders} alt="orders" width={30} height={30} />
               orders
-            </Link>
+            </span>
           </li>
-          <li className="py-2">
-            <Link
-              href={"/subscription"}
+          <li className="py-2 flex gap-2 items-center">
+            <span       
               onClick={() => setActive(false)}
               className="flex gap-2 items-center"
             >
               <Image src={repeat} alt="repeat" width={30} height={30} />
               subscription
-            </Link>
+            </span>
           </li>
-          <li className="py-2">
-            <Link
-              href={"/customers"}
+          <li className="py-2 flex gap-2 items-center">
+            <span
               onClick={() => setActive(false)}
               className="flex gap-2 items-center"
             >
               <Image src={people} alt="people" width={30} height={30} />
               customer
-            </Link>
+            </span>
           </li>
           <li className="py-2">
-            <div
-              onClick={() => setToggleDropDown(!toggleDropDown)}
-              
-              className="flex gap-2 items-center mb-1"
-            >
-              
-              <Image src={box} alt="box" width={30} height={30} />
+          <div
+            onClick={() => setToggleDropDown(!toggleDropDown)}
+            className="flex gap-2 items-center mb-1 cursor-pointer"
+          >
+            <Image src={box} alt="box" width={30} height={30} />
 
-              <span>products</span>
-              <Image src={drop} width={20} height={20} alt="dropdown icon" className={`ml-auto ${toggleDropDown ? 'rotate-180' : ''}`}/>
-            </div>
-            <ul
-              className={`${
-                toggleDropDown ? "block" : "hidden"
-              } animate-dropdown origin-top flex flex-col gap-1`}
-            >
-              <li className="py-2 pl-10 bg-grey-1 rounded-lg">
-                <Link href={"/"} onClick={() => setActive(false)}>
-                All products
-                </Link>
-                </li>
-              <li className="py-2 pl-10">categories</li>
-              <li className="py-2 pl-10">attributes</li>
-              <li className="py-2 pl-10">gift cards</li>
-              <li className="py-2 pl-10">purchase links</li>
-            </ul>
-          </li>
-          <li className="py-2">
-            <Link href={"/discount"} onClick={() => setActive(false)} className="flex gap-2">
+            <span>products</span>
+            <Image
+              src={drop}
+              width={20}
+              height={20}
+              alt="dropdown icon"
+              className={`ml-auto ${toggleDropDown ? "rotate-180" : ""}`}
+            />
+          </div>
+          <ul
+            className={`${
+              toggleDropDown ? "block" : "hidden"
+            } animate-dropdown origin-top flex flex-col gap-1`}
+          >
+            <li className="py-2 pl-10 bg-grey-1 rounded-lg">All products</li>
+            <li className="py-2 pl-10">categories</li>
+            <li className="py-2 pl-10">attributes</li>
+            <li className="py-2 pl-10">gift cards</li>
+            <li className="py-2 pl-10">purchase links</li>
+          </ul>
+        </li>
+          <li className="py-2 flex gap-2 items-center">
+            
               <Image src={discount} width={30} height={30} alt="discount icon" />
               <span>discount</span>
               <Image src={drop} width={20} height={20} alt="dropdown icon" className="ml-auto"/>
-            </Link>
+            
           </li>
-          <li className="py-2">
-            <Link href={"/reporting"} onClick={() => setActive(false)} className="flex gap-2">
+          <li className="py-2 flex gap-2 items-center" onClick={() => setActive(false)}>
+            
             <Image src={report} width={30} height={30} alt="report icon" />
 
               reporting
-            </Link>
+            
           </li>
 
           <div className="flex items-center justify-between mt-11">
