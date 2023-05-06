@@ -98,7 +98,7 @@ export default function Home() {
       </div>
       
       <h3 className="mt-8 lg:mt-12 mb-2 text-lg font-semibold bg-white ">Categories</h3>
-      <div className="border-2 p-6 w-full rounded-lg"></div>
+      <div className="border-2 p-6 w-full rounded-lg mb-8"></div>
 
     </div>
   );
