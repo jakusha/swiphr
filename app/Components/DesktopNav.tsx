@@ -17,7 +17,7 @@ import report from "../../public/report.svg";
 const DesktopNav = () => {
   const [toggleDropDown, setToggleDropDown] = useState(true);
   return (
-    <nav className="hidden lg:block h-screen overflow-auto w-[450px] border-r-2 px-8 pb-12">
+    <nav className="hidden lg:block h-screen overflow-auto w-[450px] border-r-2 px-8 pb-12 capitalize">
       <Image
         src={logo}
         width={120}
